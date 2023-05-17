@@ -1,3 +1,4 @@
+# TicTacToe-JavaScript. [click here](https://rkodirkhonov.github.io/tictactoe/)
 A simple Tic Tac Toe game built with HTML, CSS and JavaScript.
 
 
