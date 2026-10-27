@@ -1,18 +1,47 @@
-Tic Tac Toe is traditionally played on a 3 × 3 grid. Players take turns placing a mark in one of the cells of the grid. The goal of the game is for players to position their marks so that they make a continuous line of three cells vertically, horizontally, or diagonally. Start below:
-# TicTacToe-JavaScript. [click here](https://rkodirkhonov.github.io/tictactoe/)
-A simple Tic Tac Toe game built with HTML, CSS and JavaScript.
+# Tic-Tac-Toe
 
+A local two-player browser game built with HTML, CSS, and vanilla JavaScript.
 
-## Screenshots:
+[Play the game](https://rkodirkhonov.github.io/tictactoe/)
 
-Layout:
+## How it works
 
-![screenshot](https://user-images.githubusercontent.com/37968028/212334075-85e4d759-59f9-4322-99ef-b1d2bf191349.png)
+X starts. Two players take turns selecting an empty square on a 3 × 3 board. Three matching marks in a row, column, or diagonal win the round. A full board without a winner is a draw. Use Restart to play again.
 
-When X wins:
+## Run locally
 
-![screenshot](https://user-images.githubusercontent.com/37968028/212334326-c8735c6a-36ea-46c4-b808-3004bcdb64c4.png)
+Clone the repository and open `index.html` in a browser. No package installation or build step is required.
 
-When O wins:
+```bash
+git clone https://github.com/rkodirkhonov/tictactoe.git
+cd tictactoe
+```
 
-![screenshot](https://user-images.githubusercontent.com/37968028/212334651-23a398c7-ca18-4a07-bde9-463e02a58c5d.png)
+## Code map
+
+| File | Responsibility |
+| --- | --- |
+| `index.html` | Board and game controls |
+| `styles.css` | Layout, marks, hover states, and result overlay |
+| `script.js` | Turns, eight winning combinations, draw detection, and restart behavior |
+
+## Screenshots
+
+![Game board](https://user-images.githubusercontent.com/37968028/212334075-85e4d759-59f9-4322-99ef-b1d2bf191349.png)
+
+![X wins](https://user-images.githubusercontent.com/37968028/212334326-c8735c6a-36ea-46c4-b808-3004bcdb64c4.png)
+
+Screenshots and the demo link are retained from the original README.
+
+## Learning focus
+
+DOM event handling, state transitions, array operations, and separating game rules into functions.
+
+## Next improvements
+
+- [ ] Keyboard-operable cells and an announced turn/result status.
+- [ ] Tests for all winning combinations, draws, and restart behavior.
+- [ ] A score counter across rounds.
+- [ ] Optional computer opponent after the core rules are covered by tests.
+
+This is a fundamentals project: local play only, with no backend or online multiplayer.
